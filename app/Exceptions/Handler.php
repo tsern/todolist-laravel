@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Todo_list\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', 'TaskController@index');
+Route::get('/', 'HomeController@index');
 
 Route::resource('task','TaskController');
+
+Auth::routes();

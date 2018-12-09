@@ -1,4 +1,5 @@
-@extends('layouts.default')
+@extends('layouts.app')
+
 @section('content')
     <div class="row">
         <section class="content">
@@ -20,7 +21,6 @@
                                     <th><input type="checkbox" id="checkall" /></th>
                                     <th>Task Title</th>
                                     <th>Task Description</th>
-                                    <th>Status</th>
                                     <th>View</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
@@ -33,7 +33,6 @@
                                                 <td><input type="checkbox" class="checkthis" /></td>
                                                 <td>{{$task->name}}</td>
                                                 <td>{{$task->description}}</td>
-                                                <td> <span class="label label-{{ ($task->status) ? 'success' : 'danger' }}"> {{ ($task->status) ? ' Active ' : 'Inactive' }}</span></td>
                                                 <td><a class="btn btn-primary btn-xs" href="{{action('TaskController@show', $task->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
                                                 <td><a class="btn btn-primary btn-xs" href="{{action('TaskController@edit', $task->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                                                 <td>
