@@ -10,8 +10,6 @@
                         <h3 class="panel-title">My Task : {{$task->name}}</h3>
                     </div>
                     <div class="panel-body">
-
-
                         <div class="table-container">
                             {{--<div class="task" style="text-align:center">--}}
                                 {{--<iframe style="width:100%" height="315" src="{{$task->video_url}}" frameborder="0" allowfullscreen></iframe>--}}
@@ -19,8 +17,6 @@
                             <div class="task">
                                 {{$task->description}}
                             </div>
-
-
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <a href="{{ route('task.index') }}" class="btn btn-info btn-block" >Back</a>

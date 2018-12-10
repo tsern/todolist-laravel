@@ -21,6 +21,8 @@
                                     <th><input type="checkbox" id="checkall" /></th>
                                     <th>Task Title</th>
                                     <th>Task Description</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
                                     <th>View</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
@@ -33,6 +35,8 @@
                                                 <td><input type="checkbox" class="checkthis" /></td>
                                                 <td>{{$task->name}}</td>
                                                 <td>{{$task->description}}</td>
+                                                <td>{{$task->start_date}}</td>
+                                                <td>{{$task->end_date}}</td>
                                                 <td><a class="btn btn-primary btn-xs" href="{{action('TaskController@show', $task->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
                                                 <td><a class="btn btn-primary btn-xs" href="{{action('TaskController@edit', $task->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                                                 <td>

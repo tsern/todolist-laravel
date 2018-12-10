@@ -82,7 +82,7 @@ class TaskController extends Controller
         }
 
         $task = Task::find($id);
-        return view('Task.show', compact($task));
+        return view('Task.show', compact('task'));
     }
 
     /**
