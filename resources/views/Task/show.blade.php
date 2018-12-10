@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <div class="row">
         <section class="content">
@@ -6,7 +7,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">{{$task->name}}</h3>
+                        <h3 class="panel-title">My Task : {{$task->name}}</h3>
                     </div>
                     <div class="panel-body">
 
@@ -21,14 +22,10 @@
 
 
                             <div class="row">
-
                                 <div class="col-xs-12 col-sm-12 col-md-12">
-
                                     <a href="{{ route('task.index') }}" class="btn btn-info btn-block" >Back</a>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <div class="row">
         <section class="content">
@@ -41,18 +42,17 @@
                                         {{--</div>--}}
                                     {{--</div>--}}
                                 </div>
+
                                 <div class="form-group">
                                     <textarea name="description" class="form-control input-sm" placeholder="Description">{{$task->description}}</textarea>
                                 </div>
 
 
                                 <div class="row">
-
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <input type="submit"  value="Update" class="btn btn-success btn-block">
                                         <a href="{{ route('task.index') }}" class="btn btn-info btn-block" >Back</a>
                                     </div>
-
                                 </div>
                             </form>
                         </div>
